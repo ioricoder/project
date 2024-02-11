@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.audio {
+  display:none;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  animation: shake 1s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0%, 100% {
+      transform: translate(0, 0);
+  }
+  25%, 75% {
+      transform: translate(-3px, -3px); /* Adjust the shaking distance */
+  }
+  50% {
+      transform: translate(1px, 1px); /* Adjust the shaking distance */
+  }
+}
+
+.header {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  animation : slideDown 2.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+      transform: translateY(-50px); /* Start position above the button */
+      opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+      transform: translateY(0); /* End position at the original position */
+      opacity: 1; /* Fully visible at the end */
+  }
+}
+.btn1, .btn2 {
+  margin-top: 10px;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.btn1 {
+  background-color: lightcoral;
+  border: none;
+}
+
+.btn1:hover {
+  background-color: rgba(240, 128, 128, 0.726);
+}
+
+.btn2 {
+  background-color: lightgreen;
+  border: none;
+}
+
+.btn2:hover {
+  background-color: rgba(144, 238, 144, 0.852);
+}
+
+#yesButton {
+  transform: font-size 0.5s;
+}
+
+#myText {
+  font-size: 5em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
